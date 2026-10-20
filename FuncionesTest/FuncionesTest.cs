@@ -39,14 +39,14 @@ namespace FuncionesTest
         [TestMethod]
         public void EsContrasenyaValida_Null()
         {
-            bool resultado = Funciones.EsContrasenyaValidaAnGoGa2627(null);
+            bool resultado = Funciones.esContrasenyaValidaAnGoGa2627(null);
             Assert.IsFalse(resultado);
         }
 
         [TestMethod]
         public void EsContrasenyaValida_Vacia()
         {
-            bool resultado = Funciones.EsContrasenyaValidaAnGoGa2627("");
+            bool resultado = Funciones.esContrasenyaValidaAnGoGa2627("");
             Assert.IsFalse(resultado);
         }
 
@@ -54,14 +54,14 @@ namespace FuncionesTest
         [TestMethod]
         public void EsContrasenyaValida_MenorDeOchoCaracteres()
         {
-            bool resultado = Funciones.EsContrasenyaValidaAnGoGa2627("abc#123");
+            bool resultado = Funciones.esContrasenyaValidaAnGoGa2627("abc#123");
             Assert.IsFalse(resultado);
         }
 
         [TestMethod]
         public void EsContrasenyaValida_Valida()
         {
-            bool resultado = Funciones.EsContrasenyaValidaAnGoGa2627("abc#1234");
+            bool resultado = Funciones.esContrasenyaValidaAnGoGa2627("abc#1234");
             Assert.IsTrue(resultado);
         }
 

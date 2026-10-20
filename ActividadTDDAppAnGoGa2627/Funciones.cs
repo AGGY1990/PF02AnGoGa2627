@@ -23,6 +23,27 @@ namespace ActividadTDDAppAnGoGa2627
 
             return resultado;
         }
-        
+
+
+        public static bool esContrasenyaValidaAnGoGa2627(string contrasenya)
+        {
+            if (contrasenya == null || contrasenya == "")
+            {
+                return false;
+            }
+
+            if (contrasenya.Length < 8)
+            {
+                return false;
+            }
+
+            if (!contrasenya.Contains("#"))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
     }
 }
