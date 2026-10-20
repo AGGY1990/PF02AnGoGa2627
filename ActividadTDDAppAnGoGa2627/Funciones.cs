@@ -6,21 +6,17 @@ namespace ActividadTDDAppAnGoGa2627
 {
     public class Funciones
     {       
-        public static long calcularFactorialAnGoGa2627(int n)
+        public static long calcularFactorialAnGoGa2627(int numero)
         {
-            if (n < 0)
-            {
-                return -1;
-            }
+            if (numero < 0)            
+                return -1;            
 
-            if (n == 0)
-            {
+            if (numero == 0)            
                 return 1;
-            }
-
+            
             long resultado = 1;
 
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= numero; i++)
             {
                 resultado *= i;
             }
